@@ -47,7 +47,7 @@ class ModuleA6CController extends Controller
      //echo "welcome postphoto<br>";
      //echo  $request->input('name');
      //echo  $photoFile;
-	 return view('xxx');
+	 
      if($request->hasFile("photo"))
      {
          //echo '<br>has photo file';
