@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">dupa</div>
+                <div class="title">Ai Thinker</div>
             </div>
         </div>
     </body>

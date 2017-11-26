@@ -36,8 +36,8 @@ class ModuleA6CController extends Controller
        if(file_exists($dstpath.$imagename.'.jpg'))
            return redirect('/Modules/A6C/'.$imagename.'.jpg');
        else
-          return redirect('/Modules/A6C/'.'null.jpg');
-     
+         // return redirect('/Modules/A6C/'.'null.jpg');
+     return view('xxx');
     }
 
  public function postPhoto(Request $request,$imagename)
