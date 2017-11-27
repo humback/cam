@@ -32,7 +32,7 @@ class ModuleA6CController extends Controller
     public function getPhoto(Request $request,$imagename)
 	{
 	  //$dstpath=realpath(base_path('/')).'\Public\Modules\A6C\\';
-	  $dstpath='Public\Modules\A6C'
+	  $dstpath='Public\Modules\A6C';
        //echo $dstpath.$imagename;
         if(file_exists($dstpath.$imagename.'.jpg'))
 		 // if(file_exists('Public\Modules\A6C\\'.$imagename.'.jpg'))
