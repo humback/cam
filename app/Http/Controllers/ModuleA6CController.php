@@ -68,7 +68,7 @@ for($i = 2; $i < count($files); $i++)
 
          // $photoFile->move($dstpath, $imagename.'.jpg');
 		$photoFile->move('Public\Modules\A6C', $imagename.'.jpg');
-
+		File::put('Public/Modules/A6C/mytextdocument.txt','John Doe');
      }
      else
          echo '<br>no photo file';
