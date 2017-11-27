@@ -4,7 +4,7 @@
  * @var \Illuminate\Routing\Router $router
  */
 Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
- 
+Route::post('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 $router->get('/', function () {
     return view('welcome');
 });
