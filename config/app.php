@@ -147,7 +147,8 @@ return [
 
 		
 		Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
-		'Prettus\RequestLogger\Providers\LoggerServiceProvider',
+		//'Prettus\RequestLogger\Providers\LoggerServiceProvider',
+		Prettus\RequestLogger\Providers\LoggerServiceProvider::class,
     ],
 
     /*
