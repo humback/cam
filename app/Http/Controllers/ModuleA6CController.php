@@ -32,10 +32,10 @@ class ModuleA6CController extends Controller
     public function getPhoto(Request $request,$imagename)
 	{
 		
-		foreach (glob("Public\Modules\A6C/*.*") as $filename) {
-    echo "$filename size " . filesize($filename) . "\n";
-}
-		
+	$dir = 'Modules/A6C';
+$files = scandir($dir);
+for($i = 2; $i < count($files); $i++)
+    print $files[$i]."<br>";
 		
 	  //$dstpath=realpath(base_path('/')).'\Public\Modules\A6C\\';
 	//  $dstpath='Public\Modules\A6C';
