@@ -19,7 +19,7 @@ $router->get('/Modules/A6C/{imagename}', function () {
 */
 $router->post('/Modules/A6C/Photo/{imagename}','ModuleA6CController@postPhoto');
 //$router->get('/Modules/A6C/Camera/{imagename}','ModuleA6CController@getPhoto');
-//$router->get('/Modules/A6C/{imagename}','ModuleA6CController@getPhoto');
+$router->get('/Modules/A6C/{imagename}','ModuleA6CController@getPhoto');
 $router->get('/Modules/A6C/Photo/{imagename}','ModuleA6CController@postPhoto');
 $router->group([
     'middleware'=> ['wechat'],
