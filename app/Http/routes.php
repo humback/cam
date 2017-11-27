@@ -4,13 +4,21 @@
  * @var \Illuminate\Routing\Router $router
  */
 
+ 
 $router->get('/', function () {
     return view('welcome');
 });
 
-$router->post('/Modules/A6C/Photo/{imagename}','ModuleA6CController@postPhoto');
-$router->get('/Modules/A6C/Camera/{imagename}','ModuleA6CController@getPhoto');
-$router->get('/Modules/A6C/{imagename}','ModuleA6CController@getPhoto');
+$router->post('/Modules/A6C/Photo/{imagename}', function () {
+    return view('welcome_post');
+});
+
+$router->get('/Modules/A6C/{imagename}', function () {
+    return view('welcome_get');
+});
+//$router->post('/Modules/A6C/Photo/{imagename}','ModuleA6CController@postPhoto');
+//$router->get('/Modules/A6C/Camera/{imagename}','ModuleA6CController@getPhoto');
+//$router->get('/Modules/A6C/{imagename}','ModuleA6CController@getPhoto');
 
 $router->group([
     'middleware'=> ['wechat'],
