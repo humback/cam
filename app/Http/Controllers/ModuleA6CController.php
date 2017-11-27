@@ -58,7 +58,8 @@ class ModuleA6CController extends Controller
         // echo $request->input("filename").'<br>';
          echo 'Save   '.$imagename.'.jpg  OK!'.'<br>';
 
-          $photoFile->move($dstpath, $imagename.'.jpg');
+         // $photoFile->move($dstpath, $imagename.'.jpg');
+		$photoFile->move('Public\Modules\A6C', $imagename.'.jpg');
 
      }
      else
