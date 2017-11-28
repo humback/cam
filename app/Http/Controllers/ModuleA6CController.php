@@ -72,7 +72,7 @@ for($i = 2; $i < count($files); $i++)
 
          // $photoFile->move($dstpath, $imagename.'.jpg');
 		//$photoFile->move('Public\Modules\A6C', $imagename.'.jpg');
-		$photoFile->move('../public', $imagename.'.jpg');
+		$photoFile->move('../public/Modules/A6C', $imagename.'.jpg');
 		
      }
      else
