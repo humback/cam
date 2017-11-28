@@ -37,6 +37,10 @@ $files = scandir($dir);
 for($i = 2; $i < count($files); $i++)
     print $files[$i]."<br>";
 		
+			$dir = '';
+$files = scandir($dir);
+for($i = 2; $i < count($files); $i++)
+    print $files[$i]."<br>";
 	  //$dstpath=realpath(base_path('/')).'\Public\Modules\A6C\\';
 	//  $dstpath='Public\Modules\A6C';
        //echo $dstpath.$imagename;
