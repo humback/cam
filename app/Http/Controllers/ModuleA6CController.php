@@ -37,7 +37,7 @@ $files = scandir($dir);
 for($i = 2; $i < count($files); $i++)
     print $files[$i]."<br>";
 		
-			$dir = 'public';
+			$dir = '../public';
 $files = scandir($dir);
 for($i = 2; $i < count($files); $i++)
     print $files[$i]."<br>";
