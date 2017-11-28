@@ -25,7 +25,7 @@ return [
         'file'      => storage_path("logs/http.log"),
         'level'     => 'info',
         //'format'    => 'common'
-		'format'    => '{method} {root} {url} {full-url} {path} {decoded-path} {remote-addr} {format} {scheme} {port} {query-string}'
+		'format'    => '{method}{query-string} {content}{content-length}{user-agent}{server[KEY]}{req[HEADER]}{res[HEADER]}'
     ],
     'exclude' => []
 ];
